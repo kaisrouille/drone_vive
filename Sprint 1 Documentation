@@ -1,0 +1,18 @@
+CHOIX
+
+Mode de fonctionnement de la carte de puissance "Sabertooth 2x12"
+Les modes possible, Analog input (PWM), R/C input, Liaison Serie Simplifié.
+
+Analog input PWM : Nécessite l'utilisation d'un filtre passe bas, pour l'utilisation avec une fréquence PWM.
+                Avantage : Controle moteur lisse, du coup précis.
+                Inconvénient : le temps de transmission est plus lent
+                
+R/C input :  Nécessite un module RC en plus d'eu controller
+              Avantage : Envoie de donnée simplifié
+              Inconvénient : perte de connexion = moteur reste bloquer sur la position de base
+              
+Mode série : 
+             Inconvénient : Plus compliqué a mettre en oeuvre
+             Avantage : grande fiabilité
+             
+Notre choix ce portera, sur l'utilisation pour le control des moteurs PWM, parce que q
