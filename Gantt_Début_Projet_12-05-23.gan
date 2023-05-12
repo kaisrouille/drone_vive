@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2023-05-04" view-index="0" gantt-divider-location="564" resource-divider-location="300" version="3.1.3100" locale="fr_FR">
+    <description/>
+    <view zooming-state="default:3" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="414" order="0"/>
+        <field id="tpd4" name="Date de début" width="73" order="1"/>
+        <field id="tpd5" name="Date de fin" width="73" order="2"/>
+        <option id="color.recent">
+            <![CDATA[#990000 #0099ff #ffff33 #ff3333]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Sprint 1" color="#990000" meeting="false" start="2023-05-09" duration="15" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true">
+            <task id="21" name="Choisir un mode de fonctionnement de la carte de puissance" color="#8cb6ce" meeting="false" start="2023-05-09" duration="2" complete="0" thirdDate="2023-05-15" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[- PWM
+- Liaison
+- R/C]]>
+                </notes>
+            </task>
+            <task id="22" name="Câblage de la carte de puissance et de la carte de contrôle" color="#8cb6ce" meeting="false" start="2023-05-09" duration="2" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true">
+                <depend id="23" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="23" name="Réaliser un programme permettant d'activer les moteurs" color="#8cb6ce" meeting="false" start="2023-05-11" duration="4" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true">
+                <depend id="24" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="24" name="Modifier le programme pour faire avancer et reculer les moteurs" color="#8cb6ce" meeting="false" start="2023-05-17" duration="3" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true">
+                <depend id="25" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="25" name="Modifier le programme pour faire tourner le robot" color="#8cb6ce" meeting="false" start="2023-05-22" duration="3" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true">
+                <depend id="26" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="26" name="Définir la meilleure façon de faire tourner le robot" color="#8cb6ce" meeting="false" start="2023-05-25" duration="3" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true">
+                <depend id="30" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="30" name="Revue Sprint 1" color="#ff3333" meeting="true" start="2023-05-30" duration="0" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true">
+                <depend id="32" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="7" name="Début Sprint 2" color="#990000" meeting="false" start="2023-05-30" duration="10" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true">
+            <task id="32" name="Vérifier le protocole utiliser pour transférer un flux vidéo" color="#8cb6ce" meeting="false" start="2023-05-30" duration="1" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true">
+                <depend id="36" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="36" name="Connecter la caméra à un téléphone" color="#8cb6ce" meeting="false" start="2023-05-31" duration="1" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true">
+                <depend id="33" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="33" name="Etablir une connexion entre l'ordinateur et la caméra" color="#8cb6ce" meeting="false" start="2023-06-01" duration="2" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true">
+                <depend id="34" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="34" name="Vérifier comment HTC communique avec l'ordinateur" color="#8cb6ce" meeting="false" start="2023-06-05" duration="1" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[- Application
+- Protocol de transmission
+- Protocol viéo pris en compte]]>
+                </notes>
+                <depend id="35" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="35" name="Afficher la vidéo sur le casque" color="#8cb6ce" meeting="false" start="2023-06-06" duration="2" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true">
+                <depend id="37" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="37" name="Vérifier la fluidité de la vidéo transmise" color="#8cb6ce" meeting="false" start="2023-06-08" duration="1" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true">
+                <depend id="42" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="42" name="Tenter de réaliser la spatialisation de la vidéo 360 avec le casque" color="#8cb6ce" meeting="false" start="2023-06-09" duration="2" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true">
+                <depend id="53" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="53" name="Revue Sprint 2" color="#ff3333" meeting="true" start="2023-06-13" duration="0" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true">
+                <depend id="56" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="17" name="Début Sprint 3" color="#990000" meeting="false" start="2023-06-13" duration="8" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true">
+            <task id="56" name="Vérifier le protocole utilisé pour la transmission des informations de commande" color="#8cb6ce" meeting="false" start="2023-06-13" duration="3" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true">
+                <depend id="57" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="57" name="Etablir la définition des commandes" color="#8cb6ce" meeting="false" start="2023-06-16" duration="3" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true">
+                <depend id="58" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="58" name="Tester l'evoie des commandes avec les fonctions réalisées" color="#8cb6ce" meeting="false" start="2023-06-21" duration="2" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true">
+                <depend id="66" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="66" name="Revue Sprint Final" color="#ff3333" meeting="true" start="2023-06-23" duration="0" complete="0" thirdDate="2023-05-01" thirdDate-constraint="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
