@@ -1,4 +1,4 @@
-Titre :  Projet de spécialité | Drone terrestre
+Titre :  Projet de spécialité | Drone terrestre 
 Étudiant : Boucekine, Laval, Rouille, Pinson
 
 
