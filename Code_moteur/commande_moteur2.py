@@ -5,7 +5,7 @@ def main(args):
     
     S1pin = 32 
     S2pin = 33 
-
+    #fvdf
     #initialisation des GPIOs
     GPIO.setwarnings(False)
     GPIO.setmode(GPIO.BOARD)
