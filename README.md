@@ -59,11 +59,11 @@ Listes des tâches à réaliser :
 **SPRINT 1 :**
 
 
-- Mécanique du robot :
-Choisir un mode de fonctionnement de la carte de puissance
-PWM
-Liaison série
-R/C
+*Mécanique du robot :*
+- Choisir un mode de fonctionnement de la carte de puissance
+	- PWM
+	- Liaison série
+	- R/C
 
 - Câblage de la carte de puissance et de la carte de contrôle
 - Réalisation de mesures de vitesse des moteurs
@@ -72,8 +72,8 @@ R/C
 - Modifié le programme pour faire avancer puis reculer le robot
 - Modifié le programme pour rajouter des séquences où le robot tourne
 - Définir la meilleur façon de faire tourner le robot
-tourne sur lui même
-virage
+	- tourne sur lui même
+	- virage
 
 
 
