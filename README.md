@@ -69,11 +69,12 @@ Listes des tâches à réaliser :
 - Réalisation de mesures de vitesse des moteurs
 
 - Faire un programme permettant de faire tourner les moteurs ✅
-- Modifié le programme pour faire avancer puis reculer le robot
-- Modifié le programme pour rajouter des séquences où le robot tourne
+- Modifié le programme pour faire avancer puis reculer le robot ✅ *code commande_moteur.py*
+- Modifié le programme pour rajouter des séquences où le robot tourne ✅ *code commande_moteur2.py*
 - Définir la meilleur façon de faire tourner le robot ✅
 	- tourne sur lui même
 	- virage
+- Code de test pour chacun des modes moteurs (STOP, AVANCER, etc...) ✅ *code TESTcontrôle_moteur.py*
 
 
 
