@@ -59,7 +59,7 @@ Listes des tâches à réaliser :
 **SPRINT 1 :**
 
 
-*Mécanique du robot :*
+***Mécanique du robot :***
 - Choisir un mode de fonctionnement de la carte de puissance ✅
 	- PWM / Analogique
 	- Liaison série
