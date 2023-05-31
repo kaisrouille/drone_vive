@@ -60,18 +60,18 @@ Listes des tâches à réaliser :
 
 
 *Mécanique du robot :*
-- Choisir un mode de fonctionnement de la carte de puissance
+- Choisir un mode de fonctionnement de la carte de puissance ✅
 	- PWM
 	- Liaison série
 	- R/C
 
-- Câblage de la carte de puissance et de la carte de contrôle
+- Câblage de la carte de puissance et de la carte de contrôle ✅
 - Réalisation de mesures de vitesse des moteurs
 
-- Faire un programme permettant de faire tourner les moteurs
+- Faire un programme permettant de faire tourner les moteurs ✅
 - Modifié le programme pour faire avancer puis reculer le robot
 - Modifié le programme pour rajouter des séquences où le robot tourne
-- Définir la meilleur façon de faire tourner le robot
+- Définir la meilleur façon de faire tourner le robot ✅
 	- tourne sur lui même
 	- virage
 
