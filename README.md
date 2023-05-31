@@ -61,7 +61,7 @@ Listes des tâches à réaliser :
 
 *Mécanique du robot :*
 - Choisir un mode de fonctionnement de la carte de puissance ✅
-	- PWM
+	- PWM / Analogique
 	- Liaison série
 	- R/C
 
