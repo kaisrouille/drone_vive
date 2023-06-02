@@ -1,6 +1,6 @@
 Titre :  Projet de spécialité | Drone terrestre 
 
-***Étudiant : Boucekine, Laval, Rouille, Pinson***
+***Étudiant : Boucekine, LAVAL, ROUILLE, Pinson***
 
 **SPRINT 1 :**
 
