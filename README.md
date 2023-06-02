@@ -52,6 +52,8 @@ Titre :  Projet de spécialité | Drone terrestre
 
 
 
+
+
 **SPRINT 3 :**
 Connection entre la carte et le HTC (information de commande) :
 Vérifié le protocol utilisé pour la transmission des informations de commande
