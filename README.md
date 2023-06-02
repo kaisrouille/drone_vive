@@ -61,7 +61,7 @@ Listes des tâches à réaliser :
 
 ***Mécanique du robot :***
 
-\_ Equipe 1:\_
+\_Equipe 1:\_
 - Choisir un mode de fonctionnement de la carte de puissance ✅
 	- PWM / Analogique
 	- Liaison série
@@ -78,7 +78,7 @@ Listes des tâches à réaliser :
 	- virage
 - Code de test pour chacun des modes moteurs (STOP, AVANCER, etc...) ✅ *code TESTcontrôle_moteur.py*
 
-\_ Equipe 2: \_
+\_Equipe 2:\_
 - Vérifié le protocol qu’utilise la caméra pour transférer un flux vidéo ✅
 - Établi une connexion entre l’ordinateur et la caméra ✅ (via VLC)
 - Vérifier la fluidité de la vidéo transmise ✅
