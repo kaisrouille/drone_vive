@@ -1,6 +1,15 @@
 import RPi.GPIO as GPIO
 import time
 
+"""
+Commande les moteurs avec la cartes SaberTooth 2x12
+Active les moteurs en marche avant
+Stop les moteurs
+Active les moteurs en marche arrière
+Stop les moteurs
+
+Fin du programme
+"""
 def main(args):
     
     S1pin = 32 
