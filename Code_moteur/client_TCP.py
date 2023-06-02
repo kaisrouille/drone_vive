@@ -1,6 +1,6 @@
 import socket
 
-ADRESSE = '172.16.180.10'
+ADRESSE = '192.168.1.102'
 PORT = 5400
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

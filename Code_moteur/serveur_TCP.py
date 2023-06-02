@@ -2,7 +2,7 @@ import time
 import socket
 
 PORT = 5400
-ADRESSE = ''
+ADRESSE = '192.168.1.102'
 
 socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #Création d’une variable serveur pour gérer la communication TCP/IP
 socket.bind((ADRESSE, PORT)) #mise en ecoute sur le port
