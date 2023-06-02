@@ -1,6 +1,77 @@
 Titre :  Projet de spécialité | Drone terrestre 
 Étudiant : Boucekine, Laval, Rouille, Pinson
 
+**SPRINT 1 :**
+
+
+***Mécanique du robot :***
+
+#Equipe 1:
+- Choisir un mode de fonctionnement de la carte de puissance ✅
+	- PWM / Analogique
+	- Liaison série
+	- R/C
+
+- Câblage de la carte de puissance et de la carte de contrôle ✅
+- Réalisation de mesures de vitesse des moteurs
+
+- Faire un programme permettant de faire tourner les moteurs ✅
+- Modifié le programme pour faire avancer puis reculer le robot ✅ *code commande_moteur.py*
+- Modifié le programme pour rajouter des séquences où le robot tourne ✅ *code commande_moteur2.py*
+- Définir la meilleur façon de faire tourner le robot ✅
+	- tourne sur lui même
+	- virage
+- Code de test pour chacun des modes moteurs (STOP, AVANCER, etc...) ✅ *code TESTcontrôle_moteur.py*
+
+#Equipe 2:
+- Vérifié le protocol qu’utilise la caméra pour transférer un flux vidéo ✅
+- Établi une connexion entre l’ordinateur et la caméra ✅ (via VLC)
+- Vérifier la fluidité de la vidéo transmise ✅
+
+
+
+
+**SPRINT 2 :**
+
+***Connexion et flux vidéo :***
+
+#Equipe 1:
+Créer l’interface client serveur entre l’ordinateur et la raspberry
+Piloter le robot à distance
+Optimiser les commandes de contrôle du drone (sans manette)
+
+
+#Equipe 2:
+Récupérer le flux vidéo de la caméra dans le HTC
+Vérifier comment le HTC communique avec l’ordinateur (application / protocol)
+Application 
+Protocol de transmission
+Protocol vidéo pris en compte
+Afficher la vidéo sur le casque
+Améliorer la fluidité de la vidéo transmise
+
+
+
+**SPRINT 3 :**
+Connection entre la carte et le HTC (information de commande) :
+Vérifié le protocol utilisé pour la transmission des informations de commande
+Etablir la définition des commandes (joystick, boutons, mouvement)
+Avec joystick
+Avec boutons
+Avec les capteurs de mouvement
+Tester l’envoie des commandes avec les fonctions déjà réalisées (avancer, reculer,etc…)
+
+
+**ON VERRA :**
+Assemblage des fonctions :
+Créer la boucle infini du démarrage du robot
+Mettre toute les fonctions nécessaires (flux vidéo, commande)
+Assembler le flux vidéo avec la commande et la transmission des informations
+Test le programme et les limites de celui-ci
+Porté
+Autonomie
+Capacité de déplacement (vitesse, franchissement d’obstacle, etc…)
+
 
 
 **Liste détaillé et Niveau de difficulté :**
@@ -56,68 +127,6 @@ Avoir un flux vidéo exploitable
 Vérifier que la durée de la batterie est correct
 Listes des tâches à réaliser :
 
-**SPRINT 1 :**
-
-
-***Mécanique du robot :***
-
-##Equipe 1:
-- Choisir un mode de fonctionnement de la carte de puissance ✅
-	- PWM / Analogique
-	- Liaison série
-	- R/C
-
-- Câblage de la carte de puissance et de la carte de contrôle ✅
-- Réalisation de mesures de vitesse des moteurs
-
-- Faire un programme permettant de faire tourner les moteurs ✅
-- Modifié le programme pour faire avancer puis reculer le robot ✅ *code commande_moteur.py*
-- Modifié le programme pour rajouter des séquences où le robot tourne ✅ *code commande_moteur2.py*
-- Définir la meilleur façon de faire tourner le robot ✅
-	- tourne sur lui même
-	- virage
-- Code de test pour chacun des modes moteurs (STOP, AVANCER, etc...) ✅ *code TESTcontrôle_moteur.py*
-
-##Equipe 2:
-- Vérifié le protocol qu’utilise la caméra pour transférer un flux vidéo ✅
-- Établi une connexion entre l’ordinateur et la caméra ✅ (via VLC)
-- Vérifier la fluidité de la vidéo transmise ✅
-
-
-
-
-**SPRINT 2 :**
-Connection HTC vers caméra 360 :
-Vérifié le protocol qu’utilise la caméra pour transférer un flux vidéo
-Établi une connexion entre l’ordinateur et la caméra
-Vérifier comment le HTC communique avec l’ordinateur (application / protocol)
-Application 
-Protocol de transmission
-Protocol vidéo pris en compte
-Afficher la vidéo sur le casque
-Vérifier la fluidité de la vidéo transmise
-Tente de réaliser la spatialisation de la vidéo 360 avec le casque
-
-
-**SPRINT 3 :**
-Connection entre la carte et le HTC (information de commande) :
-Vérifié le protocol utilisé pour la transmission des informations de commande
-Etablir la définition des commandes (joystick, boutons, mouvement)
-Avec joystick
-Avec boutons
-Avec les capteurs de mouvement
-Tester l’envoie des commandes avec les fonctions déjà réalisées (avancer, reculer,etc…)
-
-
-**ON VERRA :**
-Assemblage des fonctions :
-Créer la boucle infini du démarrage du robot
-Mettre toute les fonctions nécessaires (flux vidéo, commande)
-Assembler le flux vidéo avec la commande et la transmission des informations
-Test le programme et les limites de celui-ci
-Porté
-Autonomie
-Capacité de déplacement (vitesse, franchissement d’obstacle, etc…)
 
 
 Lien utile
