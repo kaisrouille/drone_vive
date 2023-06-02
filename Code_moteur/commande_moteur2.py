@@ -1,6 +1,14 @@
 import RPi.GPIO as GPIO
 import time
 
+"""
+Commande les moteurs avec la cartes SaberTooth 2x12
+Meme programme que 'commande_moteur2.py'
+Permet en plus de faire tourner le robot
+
+Fin du programme
+"""
+
 def main(args):
     
     S1pin = 32 
