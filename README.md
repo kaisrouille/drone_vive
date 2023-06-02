@@ -36,19 +36,19 @@ Titre :  Projet de spécialité | Drone terrestre
 ***Connexion et flux vidéo :***
 
 #Equipe 1:
-Créer l’interface client serveur entre l’ordinateur et la raspberry
-Piloter le robot à distance
-Optimiser les commandes de contrôle du drone (sans manette)
+- Créer l’interface client serveur entre l’ordinateur et la raspberry
+- Piloter le robot à distance
+- Optimiser les commandes de contrôle du drone (sans manette)
 
 
 #Equipe 2:
-Récupérer le flux vidéo de la caméra dans le HTC
-Vérifier comment le HTC communique avec l’ordinateur (application / protocol)
-Application 
-Protocol de transmission
-Protocol vidéo pris en compte
-Afficher la vidéo sur le casque
-Améliorer la fluidité de la vidéo transmise
+- Récupérer le flux vidéo de la caméra dans le HTC
+- Vérifier comment le HTC communique avec l’ordinateur (application / protocol)
+	- Application 
+	- Protocol de transmission
+	- Protocol vidéo pris en compte
+- Afficher la vidéo sur le casque
+- Améliorer la fluidité de la vidéo transmise
 
 
 
