@@ -2,6 +2,17 @@ import time
 import socket
 import RPi.GPIO as GPIO
 
+"""
+Le programme doit etre lancee sur la Raspberry (Sesam505)
+
+Le PC client doit etre connecte au routeur (routeur_Drone) afin de communiquer avec le serveur
+
+Le programme suivant initialise le serveur et reprend les commande de controle des moteurs
+afin de les utiliser a distance. Le switch case a lieu du cote du client et le serveur recupere 
+seulement la valeur du mode choisi.
+
+"""
+
 S1pin = 32 
 S2pin = 33 
 
