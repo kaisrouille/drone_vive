@@ -1,4 +1,4 @@
-Liste des commande à réaliser dans le terminal lorsque les commits de VSCode à GitHub ne fonctionne pas :
+**Liste des commande à réaliser dans le terminal lorsque les commits de VSCode à GitHub ne fonctionne pas :**
 
 lavalthibault@client-172-18-83-19 ~ % cd Documents  
 
@@ -17,3 +17,7 @@ Depuis https://github.com/kaisrouille/drone_vive
 Rebasage et mise à jour de refs/heads/main avec succès.
 
 lavalthibault@client-172-18-83-19 drone_vive % 
+
+**Commande à faire sur la RaspBerry quand le WIFI se déconnecte :**
+
+% sudo raspi-config
