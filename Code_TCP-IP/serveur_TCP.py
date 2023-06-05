@@ -1,5 +1,26 @@
 import time
 import socket
+import RPi.GPIO as GPIO
+
+S1pin = 32 
+S2pin = 33 
+
+#initialisation des GPIOs
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BOARD)
+
+#setup des GPIO S1pin et S2pin en sortie
+GPIO.setup(S1pin,GPIO.OUT) 
+GPIO.setup(S2pin,GPIO.OUT)
+mode = 1
+
+#initialisation du mode et de la frequence      
+pwm = GPIO.PWM(S1pin,500)  
+pwm2 = GPIO.PWM(S2pin,500) 
+
+#demarre les GPIOs
+pwm.start(0)
+pwm2.start(0)
 
 PORT = 3200
 ADRESSE = '192.168.1.102'  #adresse du serveur (la raspberry)
@@ -20,31 +41,43 @@ while (1==1):
         client.send("Message recu : Le drone est a l'arret.")   # retourne au client un message personnaliser
 
         # emplacement des taches a realiser par le serveur (RaspBerry)
+        pwm.ChangeDutyCycle(75)
+        pwm2.ChangeDutyCycle(75)
         print("STOP")
         time.sleep(1)
 
     elif (cmd == 2):
         client.send("Message recu : Le drone est en marche avant.")
+        pwm.ChangeDutyCycle(60)
+        pwm2.ChangeDutyCycle(75)
         print("AVANT")
         time.sleep(1)
 
     elif (cmd == 3):
         client.send("Message recu : Le drone est en marche arriere.")
+        pwm.ChangeDutyCycle(90)
+        pwm2.ChangeDutyCycle(75)
         print("ARRIERE")
         time.sleep(1)
 
     elif (cmd == 4):
         client.send("Message recu : Le drone tourne a gauche.")
+        pwm.ChangeDutyCycle(75)
+        pwm2.ChangeDutyCycle(60)
         print("GAUCHE")
         time.sleep(1)
 
     elif (cmd == 5):
         client.send("Message recu : Le drone tourne a droite.")
+        pwm.ChangeDutyCycle(75)
+        pwm2.ChangeDutyCycle(90)
         print("DROITE")
         time.sleep(1)
 
     elif (cmd == 6):
         client.send("Message recu : La connexion va etre coupee.")
+        pwm.ChangeDutyCycle(75)
+        pwm2.ChangeDutyCycle(75)
         print("Fermeture de la connexion avec le client.")
         client.close()
         print("Arret du serveur.")
