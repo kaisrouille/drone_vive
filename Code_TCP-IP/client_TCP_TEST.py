@@ -1,7 +1,7 @@
 import socket
 
 ADRESSE = '192.168.1.102'
-PORT = 5400
+PORT = 3200
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect((ADRESSE, PORT))
