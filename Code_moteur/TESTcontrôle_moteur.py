@@ -1,6 +1,17 @@
 import RPi.GPIO as GPIO
 import time
 
+"""
+A l'aide d'un switch case (if) le programme permet de tester les moteurs dans 
+les 5 modes de rotations :
+- STOP
+- AVANT
+- ARRIERE
+- GAUCHE
+- DROITE
+
+"""
+
 def main(args):
     
     S1pin = 32 
