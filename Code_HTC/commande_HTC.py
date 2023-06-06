@@ -1,4 +1,4 @@
-import pygame-main
+import pygame
 
 pygame.init()
 nbrButtons = pygame.joystick.Joystick.get_numbuttons()
