@@ -3,7 +3,7 @@ import pygame
 pygame.init()
 
 """
-
+Le code permet de tester si un joystick est connecter au PC
 """
 
 # Initialize the joystick subsystem
