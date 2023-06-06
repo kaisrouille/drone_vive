@@ -28,14 +28,23 @@ lavalthibault@client-172-18-83-19 drone_vive %
 $ sudo su -
 
 root@Sesam303:~# date -s "2023-06-05 16:42:30"
+
 lundi 5 juin 2023, 16:42:30 (UTC+0200)
+
 root@Sesam303:~# date -s "2023-06-06 09:46:30"
+
 mardi 6 juin 2023,09:46:30 (UTC+0200)
+
 root@Sesam303:~# date
+
 mardi 6 juin 2023, 09:46:33 (UTC+0200)
+
 root@Sesam303:~#^c
-mardi 6 juin 2023, 09:46:33 (UTC+0200)root@Sesam303:~#
+
 root@Sesam303:-# xit
+
 -su: xit : commande introvable 
+
 root@Sesam303:~# exit 
+
 déconnexion
