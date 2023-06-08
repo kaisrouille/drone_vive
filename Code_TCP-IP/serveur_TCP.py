@@ -48,7 +48,7 @@ print ("Connexion avec le client : {} reussis.".format( addressClient ))  #affic
 
 while (1==1):
         
-    cmd = client.recv(1)        # stock les valeurs recu dans la variable cmd
+    cmd = client.recv(1024)        # stock les valeurs recu dans la variable cmd
     cmd = cmd.decode('utf-8')   # decode la valeur avec le meme format qu a lencodage
 
     # realise les taches selon la valeur de commande
