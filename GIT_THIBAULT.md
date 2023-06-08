@@ -6,6 +6,7 @@ lavalthibault@client-172-18-83-19 drone_vive % git branch
 * main
 
 lavalthibault@client-172-18-83-19 drone_vive % git pull --rebase origin main
+
 Depuis https://github.com/kaisrouille/drone_vive
  * branch            main       -> FETCH_HEAD
 Rebasage et mise à jour de refs/heads/main avec succès.
