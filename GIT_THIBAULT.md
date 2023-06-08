@@ -1,12 +1,6 @@
 **Liste des commande à réaliser dans le terminal lorsque les commits de VSCode à GitHub ne fonctionne pas :**
 
-lavalthibault@client-172-18-83-19 ~ % cd Documents  
-
-lavalthibault@client-172-18-83-19 Documents % cd GitHub    
-
-lavalthibault@client-172-18-83-19 GitHub % cd projet_LP_TREX 
-
-lavalthibault@client-172-18-83-19 projet_LP_TREX % cd drone_vive    
+lavalthibault@client-172-18-83-19 ~ % cd Documents/GitHub/projet_LP_TREX/drone_vive  
 
 lavalthibault@client-172-18-83-19 drone_vive % git branch                   
 * main
