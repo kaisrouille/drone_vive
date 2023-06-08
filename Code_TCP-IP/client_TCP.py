@@ -1,6 +1,6 @@
 import socket
 
-ADRESSE = '192.168.1.102'       #adresse du serveur (la raspberry)
+ADRESSE = '192.168.1.104'       #adresse du serveur (la raspberry)
 PORT = 3200             
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
