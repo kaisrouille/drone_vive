@@ -11,6 +11,10 @@ Le programme suivant initialise le serveur et reprend les commande de controle d
 afin de les utiliser a distance. Le switch case a lieu du cote du client et le serveur recupere 
 seulement la valeur du mode choisi.
 
+Avant de lancer le programme
+    verifier que le serveur et le client sont connecte sur le routeur
+    verifier que l adresse ip du serveur correspond bien
+
 """
 
 S1pin = 32 
