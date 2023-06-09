@@ -43,6 +43,8 @@ ADRESSE = '192.168.1.102'  #adresse du serveur (la raspberry)
 compteurVitesseAV = 0
 compteurVitesseAR = 0
 
+print("En attente de connexion, veuillez lancer le client...")
+
 socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # Creation dune variable serveur pour gerer la communication TCP IP
 socket.bind((ADRESSE, PORT))                                # mise en ecoute sur le port
 socket.listen(5)
@@ -52,7 +54,7 @@ print ("Connexion avec le client : {} reussis.".format( addressClient ))  #affic
 while (1==1):
         
     cmd = client.recv(1024)        # stock les valeurs recu dans la variable cmd
-    cmd = cmd.decode('utf-8')   # decode la valeur avec le meme format qu a lencodage
+    cmd = cmd.decode('utf-8')      # decode la valeur avec le meme format qu a lencodage
 
     # realise les taches selon la valeur de commande
     #MODE STOP
