@@ -40,6 +40,9 @@ pwm2.start(0)
 PORT = 3200
 ADRESSE = '192.168.1.102'  #adresse du serveur (la raspberry)
 
+compteurVitesseAV = 0
+compteurVitesseAR = 0
+
 socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # Creation dune variable serveur pour gerer la communication TCP IP
 socket.bind((ADRESSE, PORT))                                # mise en ecoute sur le port
 socket.listen(5)
@@ -52,6 +55,7 @@ while (1==1):
     cmd = cmd.decode('utf-8')   # decode la valeur avec le meme format qu a lencodage
 
     # realise les taches selon la valeur de commande
+    #MODE STOP
     if (cmd == '1'):
         client.send("Message recu : Le drone est a l'arret.")   # retourne au client un message personnaliser
 
@@ -61,20 +65,43 @@ while (1==1):
         print("STOP")
         time.sleep(1)
 
-    elif (cmd == '2'):
+    # MODE AVANT
+    elif (cmd == '2' and compteurVitesseAV==0):
         client.send("Message recu : Le drone est en marche avant.")
         pwm.ChangeDutyCycle(60)
         pwm2.ChangeDutyCycle(75)
-        print("AVANT")
+        print("AVANT V1")
+        compteurVitesseAV = 1
+        compteurVitesseAR = 0
+        time.sleep(1)
+    
+    elif (cmd == '2' and compteurVitesseAV==1):
+        client.send("Message recu : Le drone est en marche avant.")
+        pwm.ChangeDutyCycle(50)
+        pwm2.ChangeDutyCycle(75)
+        print("AVANT V2")
+        compteurVitesseAV = 0
         time.sleep(1)
 
-    elif (cmd == '3'):
+    #MODE ARRIERE
+    elif (cmd == '3' and compteurVitesseAR==0):
         client.send("Message recu : Le drone est en marche arriere.")
         pwm.ChangeDutyCycle(90)
         pwm2.ChangeDutyCycle(75)
-        print("ARRIERE")
+        print("ARRIERE V1")
+        compteurVitesseAR = 1
+        compteurVitesseAV = 0
         time.sleep(1)
+        
+    elif (cmd == '3' and compteurVitesseAR==1):
+        client.send("Message recu : Le drone est en marche arriere.")
+        pwm.ChangeDutyCycle(100)
+        pwm2.ChangeDutyCycle(75)
+        print("ARRIERE V2")
+        compteurVitesseAR = 0
+        time.sleep(1)    
 
+    #MODE GAUCHE
     elif (cmd == '4'):
         client.send("Message recu : Le drone tourne a gauche.")
         pwm.ChangeDutyCycle(75)
@@ -82,6 +109,7 @@ while (1==1):
         print("GAUCHE")
         time.sleep(1)
 
+    #MODE DROITE
     elif (cmd == '5'):
         client.send("Message recu : Le drone tourne a droite.")
         pwm.ChangeDutyCycle(75)
@@ -89,6 +117,7 @@ while (1==1):
         print("DROITE")
         time.sleep(1)
 
+    #DECONNEXION
     elif (cmd == '6'):
         client.send("Message recu : La connexion va etre coupee.")
         pwm.ChangeDutyCycle(75)
