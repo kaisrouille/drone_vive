@@ -14,6 +14,7 @@ seulement la valeur du mode choisi.
 Avant de lancer le programme
     verifier que le serveur et le client sont connecte sur le routeur
     verifier que l adresse ip du serveur correspond bien
+    
 
 """
 
