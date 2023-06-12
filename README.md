@@ -38,8 +38,8 @@ Titre :  Projet de spécialité | Drone terrestre
 
 #Equipe 1:
 - Créer l’interface client serveur entre l’ordinateur et la raspberry ✅ *code client_TCP.py et serveur_TCP.py*
-- Piloter le robot à distance
-- Optimiser les commandes de contrôle du drone (sans manette) 
+- Piloter le robot à distance ✅
+- Optimiser les commandes de contrôle du drone (sans manette) ✅
 
 
 #Equipe 2:
