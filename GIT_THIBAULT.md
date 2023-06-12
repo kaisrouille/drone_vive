@@ -43,3 +43,12 @@ root@Sesam303:-# xit
 root@Sesam303:~# exit 
 
 déconnexion
+
+
+**Envoie d'un fichier vers la RaspBerry :**
+
+scp /Users/lavalthibault/Documents/GitHub/projet_LP_TREX/drone_vive/Code_TCP-IP/serveur_TCP.py pi@192.168.1.104:
+
+**Connexion à la RaspBerry en SSH :**
+
+ssh pi@192.168.1.104
