@@ -8,11 +8,12 @@ client.connect((ADRESSE, PORT)) #initialise la connexion avec l'adresse et le po
 print ("\nConnexion vers " + ADRESSE + " : " + str(PORT) + " reussie.") #Affiche que la connexion est OK
 
 # Menu avec les commandes disponible
-print("1 : STOP")
-print("2 : AVANT")
-print("3 : ARRIERE")
-print("4 : GAUCHE")
-print("5 : DROITE")
+print("a : STOP")
+print("z : AVANT")
+print("s : ARRIERE")
+print("q : GAUCHE")
+print("d : DROITE")
+print("e : DECONNEXION")
 
 while (1):
     mode =  input("Choisir le mode :")   # recupere la valeur du mode choisi

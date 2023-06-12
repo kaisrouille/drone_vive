@@ -39,8 +39,9 @@ pwm.start(0)
 pwm2.start(0)
 
 PORT = 3200
-ADRESSE = '192.168.1.102'  #adresse du serveur (la raspberry)
+ADRESSE = '192.168.1.104'  #adresse du serveur (la raspberry)
 
+#permet d'utiliser deux vitesse pour AVANT et ARRIERE
 compteurVitesseAV = 0
 compteurVitesseAR = 0
 
@@ -59,7 +60,7 @@ while (1==1):
 
     # realise les taches selon la valeur de commande
     #MODE STOP
-    if (cmd == '1'):
+    if (cmd == 'a'):
         client.send("Message recu : Le drone est a l'arret.")   # retourne au client un message personnaliser
 
         # emplacement des taches a realiser par le serveur (RaspBerry)
@@ -71,7 +72,7 @@ while (1==1):
         time.sleep(1)
 
     # MODE AVANT
-    elif (cmd == '2' and compteurVitesseAV==0):
+    elif (cmd == 'z' and compteurVitesseAV==0):
         client.send("Message recu : Le drone est en marche avant.")
         pwm.ChangeDutyCycle(60)
         pwm2.ChangeDutyCycle(75)
@@ -80,7 +81,7 @@ while (1==1):
         compteurVitesseAR = 0
         time.sleep(1)
     
-    elif (cmd == '2' and compteurVitesseAV==1):
+    elif (cmd == 'z' and compteurVitesseAV==1):
         client.send("Message recu : Le drone est en marche avant.")
         pwm.ChangeDutyCycle(50)
         pwm2.ChangeDutyCycle(75)
@@ -89,7 +90,7 @@ while (1==1):
         time.sleep(1)
 
     #MODE ARRIERE
-    elif (cmd == '3' and compteurVitesseAR==0):
+    elif (cmd == 's' and compteurVitesseAR==0):
         client.send("Message recu : Le drone est en marche arriere.")
         pwm.ChangeDutyCycle(90)
         pwm2.ChangeDutyCycle(75)
@@ -98,7 +99,7 @@ while (1==1):
         compteurVitesseAV = 0
         time.sleep(1)
         
-    elif (cmd == '3' and compteurVitesseAR==1):
+    elif (cmd == 's' and compteurVitesseAR==1):
         client.send("Message recu : Le drone est en marche arriere.")
         pwm.ChangeDutyCycle(100)
         pwm2.ChangeDutyCycle(75)
@@ -107,7 +108,7 @@ while (1==1):
         time.sleep(1)    
 
     #MODE GAUCHE
-    elif (cmd == '4'):
+    elif (cmd == 'q'):
         client.send("Message recu : Le drone tourne a gauche.")
         pwm.ChangeDutyCycle(75)
         pwm2.ChangeDutyCycle(60)
@@ -117,7 +118,7 @@ while (1==1):
         time.sleep(1)
 
     #MODE DROITE
-    elif (cmd == '5'):
+    elif (cmd == 'd'):
         client.send("Message recu : Le drone tourne a droite.")
         pwm.ChangeDutyCycle(75)
         pwm2.ChangeDutyCycle(90)
@@ -127,7 +128,7 @@ while (1==1):
         time.sleep(1)
 
     #DECONNEXION
-    elif (cmd == '6'):
+    elif (cmd == 'e'):
         client.send("Message recu : La connexion va etre coupee.")
         pwm.ChangeDutyCycle(75)
         pwm2.ChangeDutyCycle(75)
