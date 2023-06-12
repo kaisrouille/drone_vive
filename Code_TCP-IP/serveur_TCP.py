@@ -66,6 +66,8 @@ while (1==1):
         pwm.ChangeDutyCycle(75)
         pwm2.ChangeDutyCycle(75)
         print("STOP")
+        compteurVitesseAR = 0
+        compteurVitesseAV = 0
         time.sleep(1)
 
     # MODE AVANT
@@ -110,6 +112,8 @@ while (1==1):
         pwm.ChangeDutyCycle(75)
         pwm2.ChangeDutyCycle(60)
         print("GAUCHE")
+        compteurVitesseAR = 0
+        compteurVitesseAV = 0
         time.sleep(1)
 
     #MODE DROITE
@@ -118,6 +122,8 @@ while (1==1):
         pwm.ChangeDutyCycle(75)
         pwm2.ChangeDutyCycle(90)
         print("DROITE")
+        compteurVitesseAR = 0
+        compteurVitesseAV = 0
         time.sleep(1)
 
     #DECONNEXION
