@@ -43,13 +43,13 @@ Titre :  Projet de spécialité | Drone terrestre
 
 
 #Equipe 2:
-- Récupérer le flux vidéo de la caméra dans le HTC
+- Récupérer le flux vidéo de la caméra dans le HTC ❌
+- Comprendre le fonctionnement de Unreal Engine ✅
 - Vérifier comment le HTC communique avec l’ordinateur (application / protocol)
-	- Application 
-	- Protocol de transmission
-	- Protocol vidéo pris en compte
-- Afficher la vidéo sur le casque
-- Améliorer la fluidité de la vidéo transmise
+	- Application ✅
+	- Protocol de transmission ✅
+	- Protocol vidéo pris en compte ✅
+- Afficher la vidéo sur le casque ❌
 
 
 
