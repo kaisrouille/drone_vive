@@ -52,3 +52,7 @@ scp /Users/lavalthibault/Documents/GitHub/projet_LP_TREX/drone_vive/Code_TCP-IP/
 **Connexion à la RaspBerry en SSH :**
 
 ssh pi@192.168.1.104
+
+**Lancer le programme sur la RaspBerry :**
+
+python serveur_TCP.py
