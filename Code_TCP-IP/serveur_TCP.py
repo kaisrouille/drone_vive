@@ -15,7 +15,6 @@ Avant de lancer le programme
     verifier que le serveur et le client sont connecte sur le routeur
     verifier que l adresse ip du serveur correspond bien
     
-
 """
 
 S1pin = 32 
@@ -73,8 +72,8 @@ while (1==1):
 
     # MODE AVANT
     elif (cmd == 'z' and compteurVitesseAV==0):
-        client.send("Message recu : Le drone est en marche avant.")
-        pwm.ChangeDutyCycle(60)
+        client.send("Le drone est en marche avant V1.")
+        pwm.ChangeDutyCycle(65)
         pwm2.ChangeDutyCycle(75)
         print("AVANT V1")
         compteurVitesseAV = 1
@@ -82,8 +81,8 @@ while (1==1):
         time.sleep(1)
     
     elif (cmd == 'z' and compteurVitesseAV==1):
-        client.send("Message recu : Le drone est en marche avant.")
-        pwm.ChangeDutyCycle(50)
+        client.send("Le drone est en marche avant V2.")
+        pwm.ChangeDutyCycle(55)
         pwm2.ChangeDutyCycle(75)
         print("AVANT V2")
         compteurVitesseAV = 0
@@ -91,8 +90,8 @@ while (1==1):
 
     #MODE ARRIERE
     elif (cmd == 's' and compteurVitesseAR==0):
-        client.send("Message recu : Le drone est en marche arriere.")
-        pwm.ChangeDutyCycle(90)
+        client.send("Le drone est en marche arriere. V1")
+        pwm.ChangeDutyCycle(85)
         pwm2.ChangeDutyCycle(75)
         print("ARRIERE V1")
         compteurVitesseAR = 1
@@ -100,8 +99,8 @@ while (1==1):
         time.sleep(1)
         
     elif (cmd == 's' and compteurVitesseAR==1):
-        client.send("Message recu : Le drone est en marche arriere.")
-        pwm.ChangeDutyCycle(100)
+        client.send("Le drone est en marche arriere. V2")
+        pwm.ChangeDutyCycle(95)
         pwm2.ChangeDutyCycle(75)
         print("ARRIERE V2")
         compteurVitesseAR = 0
@@ -109,9 +108,9 @@ while (1==1):
 
     #MODE GAUCHE
     elif (cmd == 'q'):
-        client.send("Message recu : Le drone tourne a gauche.")
+        client.send("Le drone tourne a gauche.")
         pwm.ChangeDutyCycle(75)
-        pwm2.ChangeDutyCycle(60)
+        pwm2.ChangeDutyCycle(70)
         print("GAUCHE")
         compteurVitesseAR = 0
         compteurVitesseAV = 0
@@ -119,9 +118,9 @@ while (1==1):
 
     #MODE DROITE
     elif (cmd == 'd'):
-        client.send("Message recu : Le drone tourne a droite.")
+        client.send("Le drone tourne a droite.")
         pwm.ChangeDutyCycle(75)
-        pwm2.ChangeDutyCycle(90)
+        pwm2.ChangeDutyCycle(80)
         print("DROITE")
         compteurVitesseAR = 0
         compteurVitesseAV = 0
