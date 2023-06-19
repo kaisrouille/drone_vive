@@ -2,43 +2,43 @@
 #include <cstdio>
 
 // Définition des broches de commande du moteur
-#define PIN_E1 21  // Broche 21 (GPIO 5)
-#define PIN_E2 22  // Broche 22 (GPIO 6)
-#define PIN_M1 23  // Broche 23 (GPIO 13)
-#define PIN_M2 24  // Broche 24 (GPIO 19)
+#define PIN_E1 23  // Broche 23 (GPIO 13)
+#define PIN_E2 24  // Broche 24 (GPIO 19)
+#define PIN_M1 21  // Broche 21 (GPIO 5)
+#define PIN_M2 22  // Broche 22 (GPIO 6)
 
 void STOP(void) {
-  digitalWrite(PIN_E1, LOW);
+  pwmWrite(PIN_E1, 0);
   digitalWrite(PIN_M1, LOW);
-  digitalWrite(PIN_E2, LOW);
+  pwmWrite(PIN_E2, 0);
   digitalWrite(PIN_M2, LOW);
 }
 
 void AVANT(char a, char b) {
-  analogWrite(PIN_E1, a);
+  pwmWrite(PIN_E1, a);
   digitalWrite(PIN_M1, HIGH);
-  analogWrite(PIN_E2, b);
+  pwmWrite(PIN_E2, b);
   digitalWrite(PIN_M2, HIGH);
 }
 
 void ARRIERE(char a, char b) {
-  analogWrite(PIN_E1, a);
+  pwmWrite(PIN_E1, a);
   digitalWrite(PIN_M1, LOW);
-  analogWrite(PIN_E2, b);
+  pwmWrite(PIN_E2, b);
   digitalWrite(PIN_M2, LOW);
 }
 
 void GAUCHE(char a, char b) {
-  analogWrite(PIN_E1, a);
+  pwmWrite(PIN_E1, a);
   digitalWrite(PIN_M1, LOW);
-  analogWrite(PIN_E2, b);
+  pwmWrite(PIN_E2, b);
   digitalWrite(PIN_M2, HIGH);
 }
 
 void DROITE(char a, char b) {
-  analogWrite(PIN_E1, a);
+  pwmWrite(PIN_E1, a);
   digitalWrite(PIN_M1, HIGH);
-  analogWrite(PIN_E2, b);
+  pwmWrite(PIN_E2, b);
   digitalWrite(PIN_M2, LOW);
 }
 
