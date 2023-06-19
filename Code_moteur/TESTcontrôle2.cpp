@@ -72,19 +72,19 @@ int main(void) {
             switch (key) {
             case 'z':
                 printf("AVANT\n");
-                AVANT(255, 255);
+                AVANT(700, 700);
                 break;
             case 's':
                 printf("ARRIERE\n");
-                ARRIERE(255, 255);
+                ARRIERE(700, 700);
                 break;
             case 'q':
                 printf("GAUCHE\n");
-                GAUCHE(100, 100);
+                GAUCHE(700, 700);
                 break;
             case 'd':
                 printf("DROITE\n");
-                DROITE(100, 100);
+                DROITE(700, 700);
                 break;
             case 'a':
                 printf("STOP\n");
