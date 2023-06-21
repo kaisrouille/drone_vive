@@ -8,36 +8,36 @@
 #define PIN_M2 22  // Broche 22 (GPIO 6)
 
 void STOP(void) {
-  pwmWrite(PIN_E1, 0);
+  pwmWrite(PIN_E1, 100);
   digitalWrite(PIN_M1, LOW);
-  pwmWrite(PIN_E2, 0);
+  pwmWrite(PIN_E2, 100);
   digitalWrite(PIN_M2, LOW);
 }
 
-void AVANT(char a, char b) {
-  pwmWrite(PIN_E1, a);
-  digitalWrite(PIN_M1, HIGH);
-  pwmWrite(PIN_E2, b);
-  digitalWrite(PIN_M2, HIGH);
-}
-
-void ARRIERE(char a, char b) {
-  pwmWrite(PIN_E1, a);
-  digitalWrite(PIN_M1, LOW);
-  pwmWrite(PIN_E2, b);
-  digitalWrite(PIN_M2, LOW);
-}
-
-void GAUCHE(char a, char b) {
+void AVANT(int a, int b) {
   pwmWrite(PIN_E1, a);
   digitalWrite(PIN_M1, LOW);
   pwmWrite(PIN_E2, b);
   digitalWrite(PIN_M2, HIGH);
 }
 
-void DROITE(char a, char b) {
+void ARRIERE(int a, int b) {
   pwmWrite(PIN_E1, a);
   digitalWrite(PIN_M1, HIGH);
+  pwmWrite(PIN_E2, b);
+  digitalWrite(PIN_M2, LOW);
+}
+
+void GAUCHE(int a, int b) {
+  pwmWrite(PIN_E1, a);
+  digitalWrite(PIN_M1, HIGH);
+  pwmWrite(PIN_E2, b);
+  digitalWrite(PIN_M2, HIGH);
+}
+
+void DROITE(int a, int b) {
+  pwmWrite(PIN_E1, a);
+  digitalWrite(PIN_M1, LOW);
   pwmWrite(PIN_E2, b);
   digitalWrite(PIN_M2, LOW);
 }
@@ -50,6 +50,9 @@ void setup(void) {
   pinMode(PIN_E2, PWM_OUTPUT);
   pinMode(PIN_M1, OUTPUT);
   pinMode(PIN_M2, OUTPUT);
+
+  pwmSetMode(PWM_MODE_MS);
+  pwmSetRange(100);
 
   // Arrêt initial
   STOP();
@@ -72,19 +75,19 @@ int main(void) {
             switch (key) {
             case 'z':
                 printf("AVANT\n");
-                AVANT(700, 700);
+                AVANT(10, 10);
                 break;
             case 's':
                 printf("ARRIERE\n");
-                ARRIERE(700, 700);
+                ARRIERE(10, 10);
                 break;
             case 'q':
                 printf("GAUCHE\n");
-                GAUCHE(700, 700);
+                GAUCHE(10, 10);
                 break;
             case 'd':
                 printf("DROITE\n");
-                DROITE(700, 700);
+                DROITE(10, 10);
                 break;
             case 'a':
                 printf("STOP\n");
