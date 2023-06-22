@@ -51,18 +51,26 @@ Titre :  Projet de spécialité | Drone terrestre
 	- Protocol vidéo pris en compte ✅
 - Afficher la vidéo sur le casque ❌
 
-
-
-
-
 **SPRINT 3 :**
-Connection entre la carte et le HTC (information de commande) :
-Vérifié le protocol utilisé pour la transmission des informations de commande
-Etablir la définition des commandes (joystick, boutons, mouvement)
-Avec joystick
-Avec boutons
-Avec les capteurs de mouvement
-Tester l’envoie des commandes avec les fonctions déjà réalisées (avancer, reculer,etc…)
+
+***Transmission et affichage :***
+
+#Equipe 1:
+- Refaire les test pour la nouvelle carte moteur ✅ *code Testcontrole2.cpp*
+- Mettre en place l'électronique necessaire au fonctionnement de la carte ✅
+- Refaire le code de commande ✅ *code Testcontrole2.cpp*
+- Mettre en place le nouveau serveur (Python vers Cpp) ✅ *code serveur_TCP2.cpp*
+- Mise en place des commandes du drone avec le HTC ❌
+
+
+#Equipe 2:
+- Récupérer le flux vidéo de la caméra dans le HTC ✅
+- Afficher la vidéo sur le casque ✅
+- Amélioration de la qualité vidéo ✅
+- Amélioration la latence ✅ (au détriment de la qualité)
+
+
+
 
 
 **ON VERRA :**
