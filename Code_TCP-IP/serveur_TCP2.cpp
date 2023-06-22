@@ -129,9 +129,9 @@ int main() {
 
         printf("Commande reçue : %s\n", buffer);
 
-        // Conversion de la commande en entier
-        int commande = atoi(buffer);
-        printf("Commande convertie en entier : %d\n", commande);
+        // Conversion de la commande en char
+        char commande = buffer[0];
+        printf("Commande convertie en char : %c\n", commande);
 
         // Traiter les commandes reçues et converties
 
