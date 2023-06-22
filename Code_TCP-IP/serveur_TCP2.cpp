@@ -75,6 +75,8 @@ int main() {
     int addrlen = sizeof(address);
     char buffer[BUFFER_SIZE] = {0};
 
+    setup();
+
     // Création du socket serveur
     if ((serverSocket = socket(AF_INET, SOCK_STREAM, 0)) == 0) {
         perror("Échec de la création du socket");
@@ -162,10 +164,6 @@ int main() {
                 STOP();
                 break;
             }
-
-        // Exemple de traitement : renvoyer un message de confirmation au client
-        char *message = "Commande reçue et convertie.";
-        send(newSocket, message, strlen(message), 0);
     }
 
     close(newSocket);

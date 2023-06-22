@@ -44,6 +44,3 @@ while (1):
             print ("Envoi ok.")
 
     print ("Reception...")
-    
-    donnees = client.recv(1024)                 # recupere les donnees que le serveur renvoie au client
-    print(donnees)                              # affiche les donnees
