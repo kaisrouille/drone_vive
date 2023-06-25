@@ -73,15 +73,11 @@ Titre :  Projet de spécialité | Drone terrestre
 
 
 
-**ON VERRA :**
-Assemblage des fonctions :
-Créer la boucle infini du démarrage du robot
-Mettre toute les fonctions nécessaires (flux vidéo, commande)
-Assembler le flux vidéo avec la commande et la transmission des informations
-Test le programme et les limites de celui-ci
-Porté
-Autonomie
-Capacité de déplacement (vitesse, franchissement d’obstacle, etc…)
+**Améliorations :**
+
+- lancer le code dès le boot de la Raspberry
+- contrôle avec la position des joystick du HTC
+- tester les limites fonctionnel du programme(soft) et du drone(hard)
 
 
 
@@ -109,40 +105,3 @@ Capacité de déplacement (vitesse, franchissement d’obstacle, etc…)
 **Liste matériel :**
 Drone terrestre, Raspberry, Casque de VR, Caméra 360, Alimentation (batterie), Carte de puissance, Dev Carte Nucleo STM32, 
 
-
-**Question :** 
-Comment envoyer un flux vidéo 360 ?
-Quels sont les aspects mécaniques à améliorer
-Quelle type de commande pour le drone (bouton, joystick)
-Affichage dans le casque (vue 180 et quand on tourne la tête on voit le reste de la vue / Vue avant et vue arrière)
-
-**Objectif :**
-Programmer une carte de contrôle permettant le pilotage du drone terrestre. Cette carte de contrôle servira aussi pour l’interconnexion entre le robot terrestre et le casque virtuel permettant le contrôle des déplacements du drone.
-L’affichage du flux vidéo provenant de la caméra 360 ce ferra directement entre la caméra et le casque virtuel.
-
-
-**Contrainte :** 
-Robot terrestre à chenille
-On change pas les moteurs et la carte de puissance
-Besoins d’une carte pouvant envoyer un signal pwm à la carte puissance
-Utiliser un HTC vive 
-
-**Besoin :** 
-le robot doit se déplacer à l’aide d’un HTC vive
-Soit avec les joysticks
-Soit avec les mouvements
-Il faut récupérer le flux vidéo 360 de la caméra et l’afficher sur le HTC
-Utiliser un signal PWM ou série
-Le robot doit pouvoir bouger en avant et en arrière
-Avoir un flux vidéo exploitable
-Vérifier que la durée de la batterie est correct
-Listes des tâches à réaliser :
-
-
-
-Lien utile
-
-https://www.youtube.com/watch?v=zpF3nPVWy_I&ab_channel=THETA360Developers
-https://gist.github.com/awesomebytes/75daab3adb62b331f21ecf3a03b3ab46
-https://pluginstore.theta360.com/plugins/com.theta360.vrmediaconnection/ 
-https://github.com/siddharthdeore/Sabertooth-motor-driver-python
